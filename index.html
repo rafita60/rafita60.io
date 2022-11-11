@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirTravel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="title">
+            <a href="index.html"> <span>Lea</span> Merendeiro</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#a-propos">A propos de TOI</a></li>
+            <li><a href="#popular-destination">Tes cadeaux</a></li>
+        </ul>
+
+        <div class="responsive-menu"></div>
+    </header>
+    <!-- accueil section -->
+    <section id="home">
+        <h4>Joyeux Anniversaire Nini</h4>
+        
+       
+    </section>
+
+    <!-- A propos section -->
+    <section id="a-propos">
+        <h1 class="title">A propos de TOI</h1>
+        <div class="img-desc">
+           <div class="left">
+                <img src="images/IMG_7125 (1).jpg"></img>
+           </div>
+            <div class="right">
+                <h3>Tu aimes tellement donner que tu mérites bien une petite page web à ton nom :) </h3> 
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- section destination -->
+    <section id="popular-destination">
+        <h1 class="title">Tes cadeaux</h1>
+        <div class="content">
+            <!-- box -->
+            <div class="box">
+                <img src="images/dinos.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Accor Arena Paris</h4>
+                        <p>Petit concert de Dinos </p>
+                        <p>Rdv le 10 mars 2023 ! </p>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box">
+                <img src="images/PAR_1140_original.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Le George</h4>
+                        <p>Je te propose un petit dîner au George, restaurant du chef étoilé Simone Zanoni</p>
+                        <p>A toi de choisir la date du week-end ! </p>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box">
+                <img src="images/goku-comedy.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Goku Comedy Club</h4>
+                        <p>Tu connais les lieux, j'avais envie qu'on se le refasse </p>
+                        <p>Jamais deux sans trois.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p> Réalisé par <span>Raphaël VIGIER</span> | Tous les droits sont réservés.</p>
+    </footer>
+
+
+    <script>
+        var toggle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toggle_menu.onclick= function(){
+             toggle_menu.classList.toggle('active');
+             menu.classList.toggle('responsive')
+        }
+    </script>
+</body>
+</html>
